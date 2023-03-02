@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6DB7E7F-F66E-4C03-BC80-A016119A3D53}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp5_期中專案</RootNamespace>
+    <AssemblyName>WindowsFormsApp5_期中專案</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="蛋糕店訂購單Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="蛋糕店訂購單Menu.Designer.cs">
+      <DependentUpon>蛋糕店訂購單Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="訂單管理_店長.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="訂單管理_店長.Designer.cs">
+      <DependentUpon>訂單管理_店長.cs</DependentUpon>
+    </Compile>
+    <Compile Include="訂單資料列表_顧客.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="訂單資料列表_顧客.Designer.cs">
+      <DependentUpon>訂單資料列表_顧客.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新增員工.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新增員工.Designer.cs">
+      <DependentUpon>新增員工.cs</DependentUpon>
+    </Compile>
+    <Compile Include="員工登入卡控.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="員工登入卡控.Designer.cs">
+      <DependentUpon>員工登入卡控.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mydbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="產品詳細資訊.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="產品詳細資訊.Designer.cs">
+      <DependentUpon>產品詳細資訊.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品管理_店長.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品管理_店長.Designer.cs">
+      <DependentUpon>商品管理_店長.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人流區分.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人流區分.Designer.cs">
+      <DependentUpon>人流區分.cs</DependentUpon>
+    </Compile>
+    <Compile Include="會員資料維護_店長.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="會員資料維護_店長.Designer.cs">
+      <DependentUpon>會員資料維護_店長.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新增會員.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新增會員.Designer.cs">
+      <DependentUpon>新增會員.cs</DependentUpon>
+    </Compile>
+    <Compile Include="修改會員資料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改會員資料.Designer.cs">
+      <DependentUpon>修改會員資料.cs</DependentUpon>
+    </Compile>
+    <Compile Include="會員登入表單.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="會員登入表單.Designer.cs">
+      <DependentUpon>會員登入表單.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="員工登入卡控.resx">
+      <DependentUpon>員工登入卡控.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新增員工.resx">
+      <DependentUpon>新增員工.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="產品詳細資訊.resx">
+      <DependentUpon>產品詳細資訊.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人流區分.resx">
+      <DependentUpon>人流區分.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品管理_店長.resx">
+      <DependentUpon>商品管理_店長.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新增會員.resx">
+      <DependentUpon>新增會員.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="會員資料維護_店長.resx">
+      <DependentUpon>會員資料維護_店長.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="修改會員資料.resx">
+      <DependentUpon>修改會員資料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="會員登入表單.resx">
+      <DependentUpon>會員登入表單.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="蛋糕店訂購單Menu.resx">
+      <DependentUpon>蛋糕店訂購單Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="訂單管理_店長.resx">
+      <DependentUpon>訂單管理_店長.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="訂單資料列表_顧客.resx">
+      <DependentUpon>訂單資料列表_顧客.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="mydbDataSet.xsc">
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mydbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mydbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mydbDataSet.xss">
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
